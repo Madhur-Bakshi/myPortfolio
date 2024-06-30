@@ -32,25 +32,23 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 gap-12 px-12 sm:px-0 ">
-          {portfolios.map(({ id, src, demo, code}) => (
+          {portfolios.map(({ id, src, demo, code }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105 h-80 w-full"
               />
-              <div className="flex items-center justify-center bg-white rounded-b-lg">
-                <a href = {demo} target = "_blank">
-
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-xl">
-                  Demo
-                </button>
+              <div className="flex items-center justify-center bg-gray-900 rounded-b-lg">
+                <a href={demo} target="_blank">
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-xl">
+                    Demo
+                  </button>
                 </a>
-                <a href = {code} target="_blank">
-
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-xl">
-                  Code
-                </button>
+                <a href={code} target="_blank">
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-xl">
+                    Code
+                  </button>
                 </a>
               </div>
             </div>
